@@ -1,11 +1,54 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
+main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
 }
 
-html,
-body,
+.nav-bar {
+  text-align: right;
+  
+}
+
+.user-pro {
+  display: flex;
+}
+
 #root {
   height: 100%;
   width: 100%;
+}
+ul{
+  list-style: none;
+}
+
+.list {
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px;
+  grid-column: 2;
+}
+
+.posts {
+  border: 2px black;
+  text-align: center;
+  justify-items: center;
+  justify-content: space-around;
+  align-content: center;
+  grid-column: 1;
+}
+
+.post{
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.user-card {
+  border: 1px solid black;
+  margin: 1%;
+  display: flex;
+  height: 120px;
+}
+
+.card-info {
+  margin: 5px;
 }
